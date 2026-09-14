@@ -51,15 +51,15 @@ var percentRemaining = 100 - percentCompleteCoarse
 
 // TODO: Display your results. Use the correct variables and avoid hard-coding the data below.
 // TODO: Adjust all decimals to two places.
-display(welcomeMessage);
-display(name);
-display(isEnrolled);
-display(totalModules);
-display(hoursPerDay);
-display(minutesPerday);
-display(adjustedHoursPerDay);
-display(adjustedMinutesPerDay);
+display("Welcome Message", welcomeMessage);
+display("My Name", name);
+display("Enrolled", isEnrolled);
+display("Total Modules", totalModules);
+display("Daily Study Hours (7 days)", (Math.round(hoursPerDay * 100)) / 100);
+display("Daily Study Minutes (7 days)", (Math.round(minutesPerday * 100)) / 100);
+display("Daily Study Hours (with rest day)", (Math.round(adjustedHoursPerDay * 100)) / 100);
+display("Daily Study Minutes (with rest day)", (Math.round(adjustedMinutesPerDay*100)) / 100);
 
 // TODO: Display your results with a % sign
-display(percentCompleteCoarse);
-display(percentRemaining);
+display("Percent Complete", ((Math.round(percentCompleteCoarse * 100)) / 100) + '%');
+display("Percent Remaining", ((Math.round(percentRemaining * 100)) / 100) + '%');
